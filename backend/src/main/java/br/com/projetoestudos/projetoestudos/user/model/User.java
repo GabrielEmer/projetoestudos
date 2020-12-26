@@ -19,7 +19,6 @@ public class User {
     @Column(name = "name", length = 60)
     private String name;
 
-    @JoinColumn(name = "publications")
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<Publication> publications;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity=Publication.class)//, mappedBy="user")
+    private List<Publication> publication;
 }

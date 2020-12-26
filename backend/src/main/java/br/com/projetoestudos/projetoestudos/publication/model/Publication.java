@@ -17,8 +17,4 @@ public class Publication {
 
     @Column(name = "description", length = 2000)
     private String description;
-
-    @JoinColumn(name = "user")
-    @ManyToOne(fetch = FetchType.EAGER)
-    private User user;
 }

@@ -1,4 +1,4 @@
-package br.com.projetoestudos.projetoestudos.model;
+package br.com.projetoestudos.projetoestudos.user.model;
 
 import lombok.Getter;
 import lombok.Setter;
